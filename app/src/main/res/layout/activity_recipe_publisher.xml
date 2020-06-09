@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RecipePublisherActivity">
+
+    <Button
+        android:id="@+id/homeRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickHomeRecipePublisher"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/backRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="onClickBackRecipePublisher"
+        android:text="Back" />
+
+    <TextView
+        android:id="@+id/recipePublisherLable"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Recipe List by Publishers"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFC107"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        android:typeface="normal"
+        android:layout_below="@+id/homeRecipe"
+        android:layout_marginStart="30dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipePublisherList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recipePublisherLable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>

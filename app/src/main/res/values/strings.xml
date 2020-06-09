@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">RecipeMaker</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_recipe_detail">Recipe Details</string>
+    <string name="api_key">4801527d7227556ec2af0626c6d5a6b1</string>
+    <string name="apiURL">http://food2fork.com/api/search</string>
+    <string name="content_desc_recipe_title">Recipe Title</string>
+    <string name="content_desc_recipe_image">Recipe Image</string>
+    <string name="content_desc_recipe_source">Recipe Source</string>
+    <string name="content_desc_recipe_ingredients">Recipe Ingredients</string>
+    <string name="menu_item_favourite_recipes">Favourite Recipes</string>
+    <string name="menu_item_search_recipes">Search Recipes</string>
+    <string name="add_to_favourites">Add to favourites</string>
+    <string name="remove_from_favourites">Remove from favourites</string>
+    <string name="search_for_recipes">Search for recipes</string>
+    <string name="source_url_text">Source URL:</string>
+    <string name="no_recipes_found">No recipes found</string>
+    <string name="search_recipes_button">Search Recipes</string>
+    <string name="search">Search</string>
+    <string name="sort_by">Sort By</string>
+    <string name="popularity">Popularity</string>
+    <string name="trendiness">Trendiness</string>
+    <string name="find_recipes">Find recipes</string>
+    <string name="find_recipes_online">Find recipes online</string>
+    <string name="recipe_removed_from_favourites">Recipe removed from favourites</string>
+    <string name="recipe_added_to_favourites">Recipe added to favourites</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="empty"></string>
+</resources>

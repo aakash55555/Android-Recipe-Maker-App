@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FoodListActivity">
+
+    <Button
+        android:id="@+id/homeFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickHomeFood"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/backFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="onClickBackFood"
+        android:text="Back" />
+
+    <TextView
+        android:id="@+id/lableFood"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeFood"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="Roboto"
+        android:text="Possible Dishes"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <ListView
+        android:id="@+id/foodList"
+        android:layout_width="match_parent"
+        android:layout_height="328dp"
+        android:layout_below="@+id/lableFood"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/getRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodList"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="9dp"
+        android:backgroundTint="#4CAF50"
+        android:backgroundTintMode="src_over"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClickRecipe"
+        android:text="Get Recipe" />
+
+    <Button
+        android:id="@+id/searchRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#4CAF50"
+        android:backgroundTintMode="src_over"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClickSearchRestaurant"
+        android:text="Search Restaurants" />
+
+
+</RelativeLayout>

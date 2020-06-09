@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+    <!--<Button
+        android:id="@+id/homeMain"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/> -->
+
+    <TextView
+        android:id="@+id/lableMain"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="Roboto"
+        android:text="Cook Look"
+        android:textAlignment="textStart"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:hint="Enter Dish Name"
+        android:id="@+id/dishName"
+        android:layout_below="@id/lableMain"
+        android:layout_marginTop="10dp"
+        android:inputType="textCapSentences"/>
+
+
+    <Button
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dishName"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#4CAF50"
+        android:backgroundTintMode="src_over"
+        android:text="Upload Image"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/serachDish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dishName"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#4CAF50"
+        android:backgroundTintMode="src_over"
+        android:onClick="onClickSearchButton"
+        android:text="Search Dish"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/iv"
+        android:layout_below="@+id/photo"
+        android:layout_marginLeft="30dp"
+        android:clickable="true"/>
+
+
+
+</RelativeLayout>
